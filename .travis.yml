@@ -10,3 +10,5 @@ gemfile:
   - ci/Gemfile.no-rails
   - ci/Gemfile.rails-2.3.x
   - ci/Gemfile.rails-3.x
+
+before_install: echo 'yes' | gem uninstall ffi -a -I || true
